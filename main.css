@@ -1,0 +1,439 @@
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.contentImage{
+  margin: 50px 0;
+  /* float: left; */
+}
+
+.contentTitles{
+  text-decoration: underline;
+}
+
+.contentTextBox{
+  width: 600px;
+  height: auto;
+  text-align: justify;
+  /* float: left; */
+  /* float: left; */
+  margin: 20px auto;
+}
+
+.contentText{
+  font-size: 19px;
+  line-height: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  /* float: left; */
+}
+
+.contentBtn{
+  margin: 20px 0 0 375px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 19px;
+}
+
+.navbar-siteName{
+  font-size: 21px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scroll {
+  color: #fff;
+  margin-top: 100px
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: hsla(5, 76%, 62%, .8)
+}
+
+.js .cd-top--fade-out {
+  opacity: .5
+}
+
+.js .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1
+}
+
+.js .cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+  position: fixed;
+  bottom: 20px;
+  bottom: var(--cd-back-to-top-margin);
+  right: 20px;
+  right: var(--cd-back-to-top-margin);
+  display: inline-block;
+  height: 40px;
+  height: var(--cd-back-to-top-size);
+  width: 40px;
+  width: var(--cd-back-to-top-size);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+  background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+  background-color: hsla(5, 76%, 62%, .8);
+  background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+.height {
+  height: auto;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+svg{
+  display: block;
+  font: 62px 'Montserrat';
+  letter-spacing: 2px;
+  width: 1060px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy{
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 3px;
+  letter-spacing: 3px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: blue;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: red;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: green;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: green;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: red;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+#headerText{
+  height: 105px;
+}
+
+/* #menu a{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover{
+  color: tomato;
+}
+
+#menuToggle{
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  margin: -2px 0;
+  top: -17px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0) opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px,-1px);
+  background: #232323;
+}
+
+#menuToggle input:checked~span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2,0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2){
+  opacity: 1;
+  transform: rotate(-45deg) translate(0,-1px);
+}
+
+#menu{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%,0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked~ul{
+  transform: none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+  #menu{
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+} */
+
+/* Global Reset */
+/* Start  styling the page */
+
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i); */
+
+.mukafatlarList{
+  list-style: none;
+  margin: 0 auto;
+}
+
+@mixin flag-aze() {
+  @include ratio(1 / 2);
+  $unit: $h120;
+  $blue: #00B5E2;
+  $red: #EF3340;
+  $green: #509E2F;
+  $white: #FFF;
+  $circle-front-size: 30 * $unit;
+  $circle-back-size: 36 * $unit;
+  $circle-back-left: 114 * $unit;
+  $circle-back-top: $h2;
+  $star-symbol: $UTF8_HEAVY_EIGHT_POINTED_RECTILINEAR_BLACK_STAR;
+  $star-size: 30 * $unit;
+  $star-left: 134 * $unit;
+  $star-top: $h2;
+
+  background-image: 
+                    centered-circle($red, $circle-front-size),
+                    circle($white, $circle-back-size, $circle-back-left, $circle-back-top),
+                    three-lines($blue, $red, $green);
+  &:before {
+    @include symbol($star-symbol, $white, $star-size, $star-left, $star-top);
+  }
+};
+
+audio:focus{
+  outline: none;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot#greenDot{
+  background-color: #28a745;
+}
+
+.regionCards{
+  float: left;
+  margin: 30px 19px;
+  height: 469.9;
+}
+
+footer{
+  margin: 0 auto;
+}
+
+.regionCardImgTop{
+  height: 233.2px;
+}
+
+:root {
+  --duration: 2s;
+  --color-blood: #8a0303;
+  --color-blood-light: #cc1212;
+  --color-light-steel: #595D61;
+  --color-dark-steel: #292728;
+}
+
+body {
+  background-color: #000;
+  padding: 0px;
+  margin: 0px;
+}
+
+section * {
+  font-family: 'Creepster', cursive;
+}
+
+
+/* Section */
+section.survival {
+  background-color: #000;
+  position: relative;
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+section.survival > * {
+  color: #fff;
+}
+
+section.survival.blood {
+  --duration: 1s;
+  padding: 0;
+
+}
+
+section.survival.blood > * {
+  position: relative;
+  z-index: 10;
+  color: #000;
+  padding: 2rem 7rem;
+  margin: 0;
+}
+
+section.survival.blood > *:before {
+  --initial-height: 0%;
+  content: " ";
+  width: 1rem;
+  height: var(--initial-height);
+  position: absolute;
+  top: 0px;
+  left: 4rem;
+  background-color: var(--color-blood);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  animation-name: blood;
+  animation-duration: var(--duration);
+  animation-timing-function: linear; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+section.survival.blood > *:nth-child(2):before {
+  animation-delay: calc(var(--duration) * 5);
+  left: calc(100% - 4rem);
+}
+
+section.survival.blood > *:nth-child(3):before {
+  animation-delay: calc(var(--duration) * 10);
+}
+
+@keyframes blood {
+  0% {
+    height: var(--initial-height);
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+section.survival.blood > *:after {
+  content: " ";
+  width: 1rem;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0%;
+  background-color: var(--color-blood);
+  z-index: -1;
+  animation-name: fillblood;
+  animation-delay: var(--duration);
+  animation-duration: calc(var(--duration) * 4);
+  animation-timing-function: linear; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+section.survival.blood > *:nth-child(2):after {
+  animation-delay: calc(var(--duration) * 6);
+}
+
+section.survival.blood > *:nth-child(3):after {
+  animation-delay: calc(var(--duration) * 11);
+}
+
+@keyframes fillblood {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+
